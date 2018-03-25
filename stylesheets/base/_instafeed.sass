@@ -1,0 +1,43 @@
+.instafeed
+    display: block
+    width: 100%
+    text-align: center
+    background: no-repeat center center scroll
+    background-size: cover
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    &__title
+        display: block
+        font-size: 40px !important 
+        padding-top: 80px
+        color: $bluish-grey !important
+    &__subtitle
+        display: block
+        font-size: 40px !important 
+        padding-top: 10px
+        color: white !important
+        &:hover
+            color: $salmon
+    &__wrapper
+        display: inline-block
+        width: 967px
+        max-width: 100%  
+        margin-top: 30px
+        margin-bottom: 211px
+        padding: 0
+        text-align: center
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+    .instafeed__title
+        font-size: 20px !important
+        padding-top: 60px   
+        padding-right: 24.5px
+        padding-left: 24.5px 
+    .instafeed__subtitle
+        font-size: 19px !important
+        padding-right: 109px
+        padding-left: 109px  
+    .instafeed__wrapper
+        margin-top: 20px 
+        margin-bottom: 100px   
+        

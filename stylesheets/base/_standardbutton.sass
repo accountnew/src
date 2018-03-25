@@ -1,0 +1,21 @@
+.button
+    color: white
+    border: none
+    width: 150px
+    height: 40px
+    border-radius: 40px
+    +customtransition(all,0.8s,ease)
+    &--case  
+        @extend %horizontal-vertical-center 
+        background-color: #000000
+        margin-left: 20px
+        margin-right: 20px
+        &:hover
+            background-color: $salmon
+            cursor: pointer  
+    &--send
+        background-color: #ff5454
+        &:hover
+            background-color: $salmon
+            cursor: pointer   
+             

@@ -1,0 +1,22 @@
+.hamburgerbutton
+    display: none
+    position: absolute
+    width: 24px
+    height: 21.5px
+    margin-left: 20px
+    background-image: url("../images/menu.png")
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-position: center
+    &:hover
+        background-image: url("../images/menu-salmon.png") 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)    
+    .hamburgerbutton
+        display: block     
+@media only screen and  (max-width: 690px)    
+    .hamburgerbutton
+        display: block           

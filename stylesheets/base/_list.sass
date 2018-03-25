@@ -1,0 +1,33 @@
+@import reset
+@import customtransition
+@import typography
+.list 
+    width: 100%
+    &--mobile
+        margin: 0
+        padding: 0
+    &__item
+        list-style-type: none  
+        &__link 
+            +customtransition(all,1.0s,ease)
+            text-decoration: none
+            color: $warm-grey
+            &:hover
+                color: $salmon     
+        &__link--active
+            color: white
+    &__item--inline
+        float: left 
+        font-size: 1em
+        margin-right: 40px
+        padding-top: 27px
+        padding-bottom: 27px
+    &__item--mobile
+        font-size: 44px  
+        margin-bottom: 40px
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+    .list--inline
+        display: none  
+@media only screen and  (max-width: 690px)    
+    .list--inline
+        display: none     

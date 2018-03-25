@@ -1,0 +1,55 @@
+.downbutton
+    display: flex
+    position: absolute
+    width: 54px 
+    height: 54px
+    bottom: 39px
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+    border-radius: 40px 
+    justify-content: center
+    align-items: center
+    background-color: white
+    &:hover
+        cursor: pointer
+        .downbutton__button
+            background-image: url("../images/salmonmouse.png")
+    &__button
+        width: 22px
+        height: 34px
+        background-image: url("../images/mouse.png")
+        background-repeat: no-repeat
+        background-size: cover
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        +customtransition(all,0.8s,ease)
+    &__arrow
+        position: absolute
+        top: 64px
+        width: 12.1px
+        height: 8px
+        background-image: url("../images/arrow-down.png")
+        background-repeat: no-repeat
+        background-size: cover
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        +customtransition(all,0.8s,ease)  
+          
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)  
+    .downbutton
+        width: 40px
+        height: 40px  
+        &:hover
+            .downbutton__button
+                background-image: url("../images/arrow-down-touch-salmon.png")
+        &__button
+            width: 12.1px
+            height: 17px   
+            border-radius: 0px
+            background-image: url("../images/arrow-down-touch.png")     
+        &__arrow
+            display: none   
+                

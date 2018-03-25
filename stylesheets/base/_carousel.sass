@@ -1,0 +1,57 @@
+@import reset 
+@import customtransition
+%horizontal-vertical-center
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center   
+.carousel-item 
+    height: 100vh
+    min-height: 300px
+    background: no-repeat center center scroll
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    text-align: center
+.carousel-caption 
+    position: absolute
+    top: 50%
+    text-align: center
+    @extend %horizontal-vertical-center
+    transform: translateY(-50%)
+.carousel-wrapcenter  
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin: auto
+    text-align: center
+.carousel-caption h3
+    color: black
+    margin-bottom: 40px
+    font-size: 60px      
+.carousel-control-prev-icon, .carousel-control-next-icon
+    width: 8px
+    height: 12.1px
+.carousel-control-float
+    height: 40px
+    width: 40px
+    float: left
+    @extend %horizontal-vertical-center 
+    border-radius: 40px
+    background-color: #000000
+    +customtransition(all,0.8s,ease)
+.carousel-control-float:hover
+    background-color: #FD5454
+.carousel-control-float:active
+    background-color: #FD5454    
+.carousel-control-wrappper
+    width: 100%
+    overflow: hidden
+    text-align: center
+    @extend %horizontal-vertical-center    
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+    .carousel-caption h3
+        font-size: 36px     
+        margin-bottom: 30px   

@@ -1,0 +1,16 @@
+{% include "layouts/menumobile.html" %}
+<div class="menubar">  
+    <div class="hamburgerbutton"></div> 
+    <img class="logo logo--header" src="images/logo.png"/>
+    <ul class="list list--inline">
+        <li class="list__item list__item--inline">
+            <a href="index.html" class="list__item__link {% if page_id == "Index" %} list__item__link--active{% endif %}">Home</a>
+        </li>
+        <li class="list__item list__item--inline">
+            <a href="#" class="list__item__link {% if page_id == "People" %} list__item__link--active{% endif %}">People</a>
+        </li>
+        <li class="list__item list__item--inline">
+            <a href="contact.html" class="list__item__link {% if page_id == "Contact" %} list__item__link--active{% endif %}">Contact</a>
+        </li>
+    </ul>
+</div>

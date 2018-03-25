@@ -1,0 +1,12 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+{% extends 'layouts/application.html' %}
+{% set page_id = "Index" %}  
+{% block content %}
+{% include "layouts/carousel.html" %}
+{% include "layouts/content.html" %}
+{% include "layouts/instafeed.html" %}
+{% endblock %}
