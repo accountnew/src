@@ -6,13 +6,13 @@ hamburgerbutton.onclick = function() {
     if (document.getElementsByClassName('menumobile')[0].style.display == "block"){
         document.getElementsByClassName('menumobile')[0].style.display = "none"
         menubar.style.borderBottom = "none"
-        hamburgerbutton.style.backgroundImage = "url('../../images/menu.png')"
+        hamburgerbutton.style.backgroundImage = "url('images/menu.png')"
         document.getElementsByTagName("BODY")[0].style.overflow = "auto"        
     }
     else {
         document.getElementsByClassName('menumobile')[0].style.display = "block"
         menubar.style.borderBottom = "solid white 2px"
-        hamburgerbutton.style.backgroundImage = "url('../../images/close.png')"
+        hamburgerbutton.style.backgroundImage = "url('images/close.png')"
         document.getElementsByTagName("BODY")[0].style.overflow = "hidden"
     }
 };
